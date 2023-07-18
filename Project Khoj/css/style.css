@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;600;700;800;900&family=Raleway:wght@300;400;500;600;700&family=Sacramento&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  
+}
+:root {
+  --primary-color: #008afc;
+  --secondary-color: #014ebc;
+  --light-pink-color: #fffcf8;
+  --light-color: #cccccc;
+  --white-color: #fff;
+  --black-color: #000;
+  --box-shadow: 0.1rem -0.07rem 1.5rem 0.3rem rgb(0 0 0 / 26%);
+  --primary-font: "Lato", sans-serif;
+  --secondary-font: "Monteserrat" sans-serif;
+}
+
+body,
+html {
+  font-size: 10px;
+  font-weight: 400;
+  font-family: var(--primary-font);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+h1 {
+  color:var(--black-color);
+  font-size: 5.5rem;
+  font-weight:800;
+  font-family:var(--secondary-font);
+  display:inline-block;
+  text-transform: uppercase;
+  line-height:1.4;
+  margin-bottom:2rem;
+
+  
+}
+h2{
+color:var(--white-color);
+  font-size: 4rem;
+  font-weight:700;
+  font-family:var(--secondary-font);
+  display:inline-block;
+  text-transform: uppercase;
+  line-height:1.4;
+  margin-bottom:2rem;
+}
+h2 span{
+  color:var(--primary-color);
+
+}
+h3{
+  color:var(--white-color);
+    font-size: 3rem;
+    font-weight:  800;
+    font-family:var(--secondary-font);
+    line-height:1.4;
+    margin-bottom:1rem;
+  }
+
+  h4{
+    color:var(--black-color);
+      font-size: 3rem;
+      font-weight:500;
+      font-family:var(--secondary-font);
+      line-height:1  ;
+      margin-bottom:2rem;
+    }
+
+    h5{
+      color:var(--white-color);
+        font: size 1.6em;
+        font-weight:500;
+        font-family:var(--secondary-font);
+        line-height:1;
+        margin-bottom:0.9375rem;
+        text-transform: uppercase;
+      }
+  p{
+    font-size:1.6rem;
+    font-weight:500;
+    line-height:0.5;
+    letter-spacing: 1px;
+    margin-top:1rem;
+    height: fit-content;
+    color:var(--white-color);
+
+  }
+
+a,
+a:active,
+a:focus,
+a:hover,
+.btn:focus {
+  text-decoration: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+.bg-black {
+  background-color: var(--black-color);
+}
+
+.main-btn {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border-radius: 5rem;
+  padding: 0.9rem 3rem;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  transition: all 0.3s linear;
+  box-shadow: 0 0.063rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+
+.view-link{
+    font-size:1.4rem;
+    margin-top:1rem;
+    color:var(--white-color);
+    transition:all 0.3s ease-in-out;
+
+}
+.view-link:hover{
+    color:var(--white-color);
+    font-size:1.6rem;
+
+}
+
+.header {
+  background-color: var(--black-color);
+  padding: 1rem 0;
+}
+.header .navbar-brand img {
+  width: 20rem;
+  height: auto;
+  object-fit: cover;
+}
+.header .navbar-nav .nav-link {
+  color: var(--white-color);
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  margin: 0 0 0.2rem;
+}
+
+.header .navbar-toggler {
+  color: var(--white-color);
+  font-size: 2rem;
+  height: 2.7rem;
+  padding: 0;
+}
+.header .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/*.header-scrolled{
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        width:100%;
+        
+
+    }*/
+
+    /*Bannersection */
+
+    .banner-wrapper{
+        margin-top:8rem;
+        background-image:url('../images/banner/banner.webp');
+        background-size:cover;
+        background-repeat:no-repeat;
+        width:100%;
+        height:auto;
+        padding-bottom:5rem;
+    } 
+    .shiv{
+      overflow:hidden;
+      border:4px solid rgb(55, 52, 52);
+      border-radius: 4%;
+      
+      padding:auto;
+      width:1000px;
+      
+      
+    }
+
+
+    .f{
+
+      margin-top: 100%;
+      display:flex;
+      justify-content: center;
+      justify-self: center;
+      font-size: 1.3rem;
+      
+      background-color: rgb(97, 128, 128);
+
+    }
+
+    .footer_wrapper{
+      background-color: var(--black-color);
+      padding-bottom:0rem;
+
+
+    }
+
+    .footer_wrapper .footer-logo img{
+      width:25rem;
+      height:auto;
+      object-fit:cover;
+
+
+    }
+    .footer_wrapper h5{
+      color:var(--white-color);
+      margin-bottom:2rem;
+      font-weight:600;
+      text-transform:capitalize;
+      font-size:2rem;
+
+
+    }
+
+    .footer_wrapper h5 a{
+      color:var(--white-color);
+
+
+    }
+
+    .footer_wrapper ul{
+      list-style:none;
+      display:flex;
+      align-items:center;
+     
+    }
+
+    .footer_wrapper ul li{
+      margin-right:1.5rem;
+    }
+    .copyright-section{
+      
+      height: max-content;
+      display: flex;
+      justify-content: center;
+    }
+    /* Whatsapp Integration*/
+    .whatsapp-icon{
+      position: relative;
+
+
+    }
+
+    .whatsapp-icon .whatsapp{
+      position: fixed;
+      width:6rem;
+      z-index:1;
+      bottom:1rem;
+      right:0.5rem;
+    }
+    .whatsapp-icon .whatsapp img{
+      width:5.5rem;
+    }
+   
+
+    .d2>p{
+    
+    
+     line-height: 1.7rem;
+     
+    
+    }
+    .c1{
+      display: flex;
+      flex-direction: row;
+      gap:2px;
+    }
+
+   .se{
+    
+    width:35%;
+    background-:hsl(193, 100%, 50%)
+    
+
+    
+   }
+   .brc{
+    margin-left:25%;
+    text-decoration:underline;
+    font-size: 28px;
+    color:rgb(167, 56, 100);
+   }
+
+   
+    
+   
+   .ld{
+    
+    display: flex;
+    flex-direction: column;
+    gap:6rem;
+    font-size: 16px;
+    overflow-wrap: break-word;
+    font-family: monospace;
+     color: burlywood;
+   }
+
+  
+    
+
+
+
+
+
+        
+
